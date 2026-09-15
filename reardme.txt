@@ -1,0 +1,7 @@
+nssm install zfmpcinfo "D:\screenshots\data"
+nssm set zfmpcinfo AppParameters "--port 8000"
+nssm set zfmpcinfo DisplayName "ZFM PC info Service"
+nssm set zfmpcinfo AppDirectory "D:\screenshots"
+nssm set zfmpcinfo DependOnService Tcpip
+nssm set zfmpcinfo AppExit Default Restart
+nssm set zfmpcinfo AppRestartDelay 5000
