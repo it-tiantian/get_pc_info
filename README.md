@@ -12,9 +12,10 @@ python server.py --port 8000 --debug
 sc create zfmpcinfo binPath= "<server.exe的完整路径> --port 8000 --max-logs 5000" start= auto displayname= "zfmpcinfo"
 #添加服务描述
 #添加服务描述
-sc description  zfmpcinfo "景秀子非计算机信息服务"
+sc description  zfmpcinfo "计算机信息服务"
 #删除服务：
 sc stop zfmpcinfo && sc delete zfmpcinfo
+
 2. 客户端启动
 # 运行一次
 python client.py --server http://192.168.1.100:8000 --once
